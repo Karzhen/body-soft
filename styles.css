@@ -1,0 +1,36 @@
+:root {
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --main-color: #422E26;
+    --back-color: #E4DACB;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: var(--back-color);
+}
+
+.menu-item {
+    width: 1440px;
+    color: var(--main-color);
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
