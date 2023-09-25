@@ -290,10 +290,39 @@ header {
     width: 208px;
 }
 
+.check-our-inst {
+    background-color: var(--dark-white);
+    padding: 80px 119px;
+}
 
+.inst-title {
+    margin-bottom: 77px;
+}
+
+.inst_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .button-inst {
+    width: 82px;
+    height: 206px;
     background-color: var(--dark-white);
+    transform: rotate(-90deg);
+    border-radius: 37px;
+    border: 1px solid #422E26;
+}
+
+.insta_image {
+    width: 206px;
+    height: 206px;
+    margin-right: 18px;
+}
+
+.insta_image:last-child {
+    margin: 0;
 }
 
 .hidden {
