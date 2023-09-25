@@ -4,6 +4,7 @@
     --main-color: #422E26;
     --back-color: #E4DACB;
     --dark-white: #FCF7F0;
+    --creme-white: #E9E5DE;
 }
 
 * {
@@ -139,12 +140,87 @@ a:visited {
     white-space: nowrap;
 }
 
+.about {
+    padding: 80px 70px;
+    background-color: var(--creme-white);
+
+}
+
+.about-title {
+    margin-bottom: 32px;
+}
+
+.about-text {
+    width: 1300px;
+    border-radius: 40px;
+    border: 1px solid #000;
+    padding: 48px 41px;
+    background-color: var(--main-color);
+    margin-bottom: 32px;
+    text-align: justify;
+}
+
+.about-text > .text {
+    color: var(--back-color);
+}
+
+.rules-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules {
+    width: 479px;
+    height: 479px;
+    border-radius: 479px;
+    border: 1px solid var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-rule {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.text-rule {
+    font-size: 20px;
+    width: 383px;
+    height: 134px;
+    text-align: center;
+}
+
+.rule1 {
+    margin-bottom: -126px;
+}
+
+.second-row {
+    width: 879px;
+    display: flex;
+}
+
+.rule2 {
+    margin-right: -79px;
+}
+
+.rule2 > .text-rule {
+    width: 300px;
+}
+
+.rule3 > .text-rule {
+    width: 300px;
+}
+
 .services {
     width: 1440px;
     height: 668px;
     background-color: var(--back-color);
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 110px;
+    padding-right: 110px;
 }
 
 .services-choose {
@@ -169,10 +245,24 @@ a:visited {
 
 .arrow-left {
     display: block;
-    width: 33px;
-    height: 62px;
+    /*width: 33px;*/
+    /*height: 62px;*/
+    width: 43px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='62' viewBox='0 0 33 62' fill='none'%3E%3Cpath d='M31.2451 61L3.46093 36.3031C0.179689 33.3864 0.179689 28.6137 3.46093 25.697L31.2451 1' stroke='%23422E26' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     margin-right: 70px;
+    transition: 1s;
+}
+
+.arrow-left:hover {
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--main-color);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='62' viewBox='0 0 33 62' fill='none'%3E%3Cpath d='M31.2451 61L3.46093 36.3031C0.179689 33.3864 0.179689 28.6137 3.46093 25.697L31.2451 1' stroke='%23E4DACB' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    transition: 1s;
 }
 
 .images-slider {
@@ -235,14 +325,28 @@ a:visited {
 
 .arrow-right {
     display: block;
-    width: 33px;
-    height: 62px;
+    /*width: 33px;*/
+    /*height: 62px;*/
+    width: 43px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='62' viewBox='0 0 33 62' fill='none'%3E%3Cpath d='M1 61L28.7839 36.3031C32.0652 33.3864 32.0652 28.6137 28.7839 25.697L1 1' stroke='%23422E26' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    transition: 1s;
+}
+
+.arrow-right:hover {
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--main-color);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='62' viewBox='0 0 33 62' fill='none'%3E%3Cpath d='M1 61L28.7839 36.3031C32.0652 33.3864 32.0652 28.6137 28.7839 25.697L1 1' stroke='%23E4DACB' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    transition: 1s;
 }
 
 .specialists {
     width: 100%;
-    background-color: var(--dark-white);
+    background-color: var(--creme-white);
     padding: 80px 84px 60px;
 }
 
@@ -326,7 +430,7 @@ a:visited {
 }
 
 .check-our-inst {
-    background-color: var(--dark-white);
+    background-color: var(--creme-white);
     padding: 80px 110px;
 }
 
@@ -344,13 +448,21 @@ a:visited {
 .button-inst {
     width: 82px;
     height: 206px;
-    background-color: var(--dark-white);
+    background-color: var(--creme-white);
     border-radius: 37px;
     border: 1px solid var(--main-color);
     display: flex;
     justify-content: center;
     align-items: center;
     transform-origin: center center;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.button-inst:hover {
+    background-color: var(--main-color);
+    color: var(--creme-white);
+    transition: 1s;
 }
 
 .button-inst > span {
@@ -427,7 +539,7 @@ a:visited {
 }
 
 .map__right-side > p {
-    margin-bottom: 0.875vh;
+    margin-bottom: 1.875vh;
 }
 
 .first-line {
@@ -437,7 +549,7 @@ a:visited {
 
 .first-line > p {
     margin-right: 17px;
-    margin-bottom: 0.875vh;
+    margin-bottom: 1.875vh;
 }
 
 .svg {
@@ -463,26 +575,20 @@ footer {
     align-items: center;
 }
 
-.footer-logo {
-    display: flex;
-    align-items: center;
-}
-
-.footer-text {
-    margin-right: 32px;
-}
-
-.first-row {
-    font-size: 30px;
+.footer-logo > img {
+    width: 224px;
+    height: 130px;
 }
 
 .inst-link {
     width: 29px;
     height: 32px;
+    margin-right: 100px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='32' viewBox='0 0 29 32' fill='none'%3E%3Cpath d='M10.45 30.071H18.55C25.3 30.071 28 27.1639 28 19.8962V11.1749C28 3.9071 25.3 1 18.55 1H10.45C3.7 1 1 3.9071 1 11.1749V19.8962C1 27.1639 3.7 30.071 10.45 30.071Z' stroke='%23422E26' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.4999 20.623C17.1095 20.623 19.2249 18.3453 19.2249 15.5356C19.2249 12.7259 17.1095 10.4482 14.4999 10.4482C11.8904 10.4482 9.7749 12.7259 9.7749 15.5356C9.7749 18.3453 11.8904 20.623 14.4999 20.623Z' stroke='%23422E26' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M22.1089 8.26776H22.1245' stroke='%23422E26' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
 .footer-up {
+    width: 121px;
     display: flex;
     align-items: center;
     text-decoration: none;
