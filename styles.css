@@ -364,7 +364,15 @@ header {
     width: 381px;
     height: 381px;
     border-radius: 381px;
-    border: 1px solid var(--main-color);;
+    border: 1px solid var(--main-color);
+    transition: 1s;
+}
+
+.map-image:hover {
+    width: 433px;
+    height: 433px;
+    border-radius: 433px;
+    transition: 1s;
 }
 
 .vertical-line {
