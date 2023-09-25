@@ -42,9 +42,13 @@ h2 {
     margin-bottom: 80px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .text {
     color: var(--main-color);
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -72,13 +76,15 @@ header {
 }
 
 .menu-item {
-    color: var(--main-color);
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-right: 39px;
+}
+
+a {
+    color: var(--main-color);
+}
+
+a:visited {
+    color: var(--main-color);
 }
 
 .button {
@@ -87,7 +93,21 @@ header {
     border-radius: 40.5px;
     border: 1px solid var(--main-color);
     margin-right: 120px;
-    background: #E4DACB;
+    background: var(--back-color);
+}
+
+.sign-up {
+    background-color: var(--main-color);
+    color: var(--dark-white);
+    transition: 1s;
+}
+
+.sign-up:hover {
+    cursor: pointer;
+    background: var(--back-color);
+    color: var(--main-color);
+    border: 2px solid #88614d;
+    transition: 1s;
 }
 
 .welcome {
@@ -204,6 +224,13 @@ header {
 
 .read-more {
     height: 82px;
+    transition: 1s;
+}
+
+.read-more:hover {
+    background-color: var(--main-color);
+    color: var(--dark-white);
+    transition: 1s;
 }
 
 .arrow-right {
@@ -240,7 +267,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 /*.specialist > img {*/
@@ -251,6 +278,7 @@ header {
 .portrait {
     width: 384px;
     height: 476px;
+    object-fit: cover;
 }
 
 .reviews {
@@ -299,7 +327,7 @@ header {
 
 .check-our-inst {
     background-color: var(--dark-white);
-    padding: 80px 119px;
+    padding: 80px 110px;
 }
 
 .inst-title {
@@ -317,15 +345,27 @@ header {
     width: 82px;
     height: 206px;
     background-color: var(--dark-white);
-    transform: rotate(-90deg);
     border-radius: 37px;
     border: 1px solid var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: center center;
+}
+
+.button-inst > span {
+    transform: rotate(-90deg);
+}
+
+.instagram-images {
+    margin-left: 18px;
 }
 
 .insta_image {
     width: 206px;
     height: 206px;
     margin-right: 18px;
+    object-fit: cover;
 }
 
 .insta_image:last-child {
@@ -366,6 +406,7 @@ header {
     border-radius: 381px;
     border: 1px solid var(--main-color);
     transition: 1s;
+    object-fit: cover;
 }
 
 .map-image:hover {
