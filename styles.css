@@ -243,7 +243,7 @@ a:visited {
     align-items: center;
 }
 
-.arrow-left {
+.arrow {
     display: block;
     /*width: 33px;*/
     /*height: 62px;*/
@@ -251,18 +251,32 @@ a:visited {
     height: 72px;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='62' viewBox='0 0 33 62' fill='none'%3E%3Cpath d='M31.2451 61L3.46093 36.3031C0.179689 33.3864 0.179689 28.6137 3.46093 25.697L31.2451 1' stroke='%23422E26' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    margin-right: 70px;
     transition: 1s;
 }
 
-.arrow-left:hover {
+.arrow:hover {
     border-radius: 10px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--main-color);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='62' viewBox='0 0 33 62' fill='none'%3E%3Cpath d='M31.2451 61L3.46093 36.3031C0.179689 33.3864 0.179689 28.6137 3.46093 25.697L31.2451 1' stroke='%23E4DACB' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     transition: 1s;
+}
+
+.left {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='62' viewBox='0 0 33 62' fill='none'%3E%3Cpath d='M31.2451 61L3.46093 36.3031C0.179689 33.3864 0.179689 28.6137 3.46093 25.697L31.2451 1' stroke='%23422E26' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    margin-right: 70px;
+}
+
+.left:hover {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='62' viewBox='0 0 33 62' fill='none'%3E%3Cpath d='M31.2451 61L3.46093 36.3031C0.179689 33.3864 0.179689 28.6137 3.46093 25.697L31.2451 1' stroke='%23E4DACB' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.right {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='62' viewBox='0 0 33 62' fill='none'%3E%3Cpath d='M1 61L28.7839 36.3031C32.0652 33.3864 32.0652 28.6137 28.7839 25.697L1 1' stroke='%23422E26' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.right:hover {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='62' viewBox='0 0 33 62' fill='none'%3E%3Cpath d='M1 61L28.7839 36.3031C32.0652 33.3864 32.0652 28.6137 28.7839 25.697L1 1' stroke='%23E4DACB' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
 .images-slider {
@@ -323,27 +337,6 @@ a:visited {
     transition: 1s;
 }
 
-.arrow-right {
-    display: block;
-    /*width: 33px;*/
-    /*height: 62px;*/
-    width: 43px;
-    height: 72px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='62' viewBox='0 0 33 62' fill='none'%3E%3Cpath d='M1 61L28.7839 36.3031C32.0652 33.3864 32.0652 28.6137 28.7839 25.697L1 1' stroke='%23422E26' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    transition: 1s;
-}
-
-.arrow-right:hover {
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--main-color);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='62' viewBox='0 0 33 62' fill='none'%3E%3Cpath d='M1 61L28.7839 36.3031C32.0652 33.3864 32.0652 28.6137 28.7839 25.697L1 1' stroke='%23E4DACB' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    transition: 1s;
-}
-
 .specialists {
     width: 100%;
     background-color: var(--creme-white);
@@ -373,11 +366,6 @@ a:visited {
     align-items: center;
     overflow: hidden;
 }
-
-/*.specialist > img {*/
-/*    position: relative;*/
-/*    top: -50px;*/
-/*}*/
 
 .portrait {
     width: 384px;
