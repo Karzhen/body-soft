@@ -7,6 +7,13 @@ const arrowLeft = document.querySelector('.left'),
 
 let slideIndex = 0,
     previousSlide = 0;
+
+const checkInactive = (currentSlide) => {
+    if (0 < currentSlide && currentSlide < arrayImages.length) {
+        arrowLeft.classList.remove('hidden')
+        arrowRight.classList.remove('hidden')
+    }
+}
 const nextSlide = () => {
     if (slideIndex < (arrayImages.length - 1)) {
         console.log(slideIndex);
@@ -16,13 +23,35 @@ const nextSlide = () => {
         arrowRight.classList.remove('arrow-right-inactive');
         arrowRight.classList.add('arrow-right');
         arrowLeft.classList.add('arrow-left');
+        checkInactive(slideIndex)
+        previousSlide += 1;
     } else {
         arrowRight.classList.remove('arrow-right');
-        arrowRight.classList.add('arrow-right-inactive');
+        // arrowRight.classList.add('arrow-right-inactive');
+        arrowRight.classList.add('hidden')
     }
-    previousSlide += 1;
-    arrayImages[slideIndex].style.border  = '2px solid black';
+    // arrayImages[slideIndex].style.border  = '2px solid black';
     console.log(previousSlide);
 }
 
+const prevSlide = () => {
+    if (slideIndex > 0) {
+        slideIndex -= 1;
+        arrayImages[previousSlide].classList.add('hidden');
+        arrayImages[slideIndex].classList.remove('hidden');
+        arrowLeft.classList.remove('arrow-left-inactive');
+        arrowLeft.classList.add('arrow-left');
+        arrowRight.classList.add('arrow-right');
+        checkInactive(slideIndex)
+        previousSlide -= 1;
+    } else {
+        arrowLeft.classList.remove('arrow-left');
+        // arrowLeft.classList.add('arrow-left-inactive');
+        arrowLeft.classList.add('hidden')
+    }
+    // arrayImages[slideIndex].style.border  = '2px solid black';
+    console.log(previousSlide);
+}
+
+arrowLeft.addEventListener('click', prevSlide);
 arrowRight.addEventListener('click', nextSlide);
