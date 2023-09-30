@@ -288,6 +288,12 @@ a:visited {
     height: 392px;
     border-radius: 90px;
     object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.image.visible {
+    opacity: 1;
 }
 
 .text-container {
