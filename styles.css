@@ -243,6 +243,12 @@ a:visited {
     align-items: center;
 }
 
+.container__massage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .arrow {
     display: block;
     /*width: 33px;*/
@@ -294,6 +300,7 @@ a:visited {
 
 .image.visible {
     opacity: 1;
+    transition: opacity 1s ease;
 }
 
 .text-container {
@@ -600,5 +607,11 @@ footer {
 }
 
 .hidden {
+    opacity: 0;
+    transition: opacity 1s ease;
+    /*display: none;*/
+}
+
+.none {
     display: none;
 }

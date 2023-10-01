@@ -3,7 +3,8 @@ const arrowLeft = document.querySelector('.left'),
     imageSlider = document.querySelector('.images-slider'),
     arrayImages = document.querySelectorAll('.image'),
     image = document.querySelector('.image'),
-    textContainer = document.querySelector('.text-container');
+    textContainer = document.querySelector('.text-container'),
+    massageContainer = document.querySelectorAll('.container__massage');
 
 let slideIndex = 0,
     previousSlide = 0;
@@ -18,10 +19,12 @@ const nextSlide = () => {
     if (slideIndex < (arrayImages.length - 1)) {
         console.log(slideIndex);
         slideIndex += 1;
-        arrayImages[previousSlide].classList.add('hidden');
-        arrayImages[previousSlide].classList.remove('visible');
-        arrayImages[slideIndex].classList.remove('hidden');
-        arrayImages[slideIndex].classList.add('visible');
+        massageContainer[previousSlide].classList.add('none');
+        massageContainer[slideIndex].classList.remove('none');
+        // arrayImages[previousSlide].classList.add('none');
+        // arrayImages[previousSlide].classList.remove('visible');
+        // arrayImages[slideIndex].classList.remove('none');
+        // arrayImages[slideIndex].classList.add('visible');
         arrowRight.classList.remove('arrow-right-inactive');
         arrowRight.classList.add('arrow-right');
         arrowLeft.classList.add('arrow-left');
@@ -39,10 +42,12 @@ const nextSlide = () => {
 const prevSlide = () => {
     if (slideIndex > 0) {
         slideIndex -= 1;
-        arrayImages[previousSlide].classList.add('hidden');
-        arrayImages[previousSlide].classList.remove('visible');
-        arrayImages[slideIndex].classList.remove('hidden');
-        arrayImages[slideIndex].classList.add('visible');
+        massageContainer[previousSlide].classList.add('none');
+        massageContainer[slideIndex].classList.remove('none');
+        // arrayImages[previousSlide].classList.add('none');
+        // arrayImages[previousSlide].classList.remove('visible');
+        // arrayImages[slideIndex].classList.remove('none');
+        // arrayImages[slideIndex].classList.add('visible');
         arrowLeft.classList.remove('arrow-left-inactive');
         arrowLeft.classList.add('arrow-left');
         arrowRight.classList.add('arrow-right');
