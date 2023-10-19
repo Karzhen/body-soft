@@ -490,14 +490,12 @@ a:visited {
     transform: rotate(-90deg);
 }
 
-.instagram-images {
+.instagram-links {
     margin-left: 18px;
 }
 
-.instagram-images .insta_image:hover {
-    width: 235px;
-    height: 235px;
-    transition: 2s;
+.instagram-images {
+    position: relative; /* добавлено */
 }
 
 .insta_image {
@@ -505,10 +503,18 @@ a:visited {
     height: 206px;
     margin-right: 18px;
     object-fit: cover;
+    transition: transform 1s; /* изменено */
+    position: relative; /* добавлено */
+    z-index: 1; /* добавлено */
 }
 
 .insta_image:last-child {
     margin: 0;
+}
+
+.insta_image:hover {
+    transform: scale(1.14); /* используется вместо изменения ширины и высоты */
+    z-index: 2; /* добавлено */
 }
 
 .map {
@@ -530,9 +536,10 @@ a:visited {
 }
 
 .map__left-side {
-    width: 433px;
-    height: 433px;
-    border-radius: 433px;
+    width: 430px;
+    height: 430px;
+    background-color: var(--main-color);
+    border-radius: 430px;
     border: 1px solid var(--main-color);
     display: flex;
     align-items: center;
@@ -543,16 +550,16 @@ a:visited {
     width: 381px;
     height: 381px;
     border-radius: 381px;
-    border: 1px solid var(--main-color);
+    border: 2px solid var(--creme-white);
     transition: 1s;
     object-fit: cover;
 }
 
 .map-image:hover {
-    width: 433px;
-    height: 433px;
-    border-radius: 433px;
-    transition: 2s;
+    width: 435px;
+    height: 435px;
+    border-radius: 435px;
+    transition: 1s;
 }
 
 .vertical-line {
